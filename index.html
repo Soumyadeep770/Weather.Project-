@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App Project JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+        <h2>Weather</h2>
+        <input type="text" id="city-input" placeholder="Enter a City Name">
+<button id="search-btn">Search</button>
+<script>
+  document.getElementById("search-btn").addEventListener("click", function() {
+    const container = document.querySelector(".container");
+    container.classList.remove("animate");
+    setTimeout(() => {
+      container.classList.add("animate");
+    }, 10);
+  });
+</script>
+        
+        <button id="current-location-btn">Use Current Location</button>
+        
+        <div id="weather-forecast">
+            
+            <div id="forecast-container"></div>
+        </div>
+    </div>
+    <video class="background-video" autoplay loop muted>
+      <source src="856463-hd_1920_1080_30fps.mp4" type="video/mp4">
+  </video>
+
+    
+  </body>
+</html>
